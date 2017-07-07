@@ -34,14 +34,14 @@ def create_ask_messgage(user):
     """
     買い時通知メッセージの作成
     """
-    msg = "@" + user["name"] + " BitcoinのASKが%s以下になりました" % user["ask"]
+    msg = "@" + user["name"] + " BitcoinのASKが%s以下になりました。買い時かも。" % user["ask"]
     return msg
 
 def create_bid_messgage(user):
     """
     売り時通知メッセージの作成
     """
-    msg = "@" + user["name"] + " BitcoinのBIDが%s以上になりました" % user["bid"]
+    msg = "@" + user["name"] + " BitcoinのBIDが%s以上になりました。売り時かも。" % user["bid"]
     return msg
 
 def get_twitter_key():
